@@ -3,6 +3,8 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+gem 'devise'
+
 gem 'simple_form'
 
 gem 'cloudinary', '~> 1.16.0'
