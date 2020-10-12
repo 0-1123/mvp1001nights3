@@ -3,6 +3,10 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.6.3'
 
+gem 'autoprefixer-rails'
+
+gem 'font-awesome-sass', '~> 5.6.1'
+
 gem 'devise'
 
 gem 'simple_form'
