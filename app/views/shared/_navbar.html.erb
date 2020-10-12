@@ -11,13 +11,20 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item m-2">
-        <%= link_to "Hall of Fame", "#", class: "nav-link" %>
+        <%= link_to "Explore", "#", class: "nav-link" %>
+      </li>
+      <li class="nav-item m-2">
+        <%= link_to "Marketplace", "#", class: "nav-link" %>
+      </li>
+       <li class="nav-item m-2">
+        <%= link_to "Artist information", "#", class: "nav-link" %>
       </li>
       <% if user_signed_in? %>
         <li class="nav-item dropdown">
           <%= image_tag "https://images.unsplash.com/photo-1537815749002-de6a533c64db?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=545&q=80", onclick: "myFunction()", class: "dropbtn avatar" %>
           <div id="dropdown-content" id="myDropdown">
-            <%= link_to "Settings", "#", class: "dropdown-item" %>
+            <%= link_to "Collection", "#", class: "dropdown-item" %>
+            <%= link_to "Account Information", "#", class: "dropdown-item" %>
             <%= link_to "Log out", destroy_user_session_path, :method => :delete, class: "dropdown-item" %>
           </div>
         </li>
